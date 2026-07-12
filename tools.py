@@ -14,7 +14,8 @@ def clean_company_name(company):
 def search_company(company):
 
     response = client.search(
-        query=f"{company} company overview CEO headquarters products competitors",
+        query=f"{company} company overview business model revenue profitability "
+              f"debt financial health competitors market share growth strategy risks",
         search_depth="advanced",
         max_results=5
     )
@@ -35,7 +36,7 @@ def search_company(company):
 def latest_news(company):
 
     response = client.search(
-        query=f"{company} latest news",
+        query=f"{company} latest news financial results earnings",
         search_depth="advanced",
         max_results=5
     )

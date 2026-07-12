@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import os
 from langchain_groq import ChatGroq
 
-from prompts import COMPANY_PROMPT
+from prompts import INVESTMENT_PROMPT
 from tools import clean_company_name, search_company, latest_news
 
 load_dotenv()
@@ -27,7 +27,7 @@ def generate_report(company):
 
     news = latest_news(company)
 
-    prompt = COMPANY_PROMPT.format(
+    prompt = INVESTMENT_PROMPT.format(
         company=company,
         search_data=search_data,
         news=news
