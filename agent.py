@@ -37,6 +37,9 @@ def generate_report(company):
 
     report = response.content
 
+    # Create outputs folder if it doesn't exist
+    os.makedirs("outputs", exist_ok=True)
+
     file_name = f"outputs/{company}.txt"
 
     with open(file_name, "w", encoding="utf-8") as file:
