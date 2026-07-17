@@ -1,58 +1,144 @@
-# Company Research Agent
+# Company Research & Data Processing Pipeline
 
 ## Overview
 
-Company Research Agent is an AI-powered web application that generates detailed company reports using Large Language Models and web search.
+This project is a Python-based application that automates company research by collecting information from multiple online sources and generating structured investment reports.
 
-The application collects company information, latest news, and generates a structured research report.
+The application demonstrates data collection, processing, validation, and report generation using APIs and Python automation. It follows a modular architecture, making it easy to maintain and extend.
+
+---
 
 ## Features
 
-- Company Overview
-- CEO Information
-- Headquarters
-- Industry
-- Products & Services
-- Competitors
-- Strengths
-- Weaknesses
-- Future Outlook
-- Latest News
-- Report Download
-- Live Web Search
+- Collects company information from multiple online sources
+- Retrieves recent company news
+- Processes and organizes collected data
+- Generates structured research reports
+- Modular Python codebase
+- API integration
+- Automated report generation
+- Git version control
+
+---
 
 ## Tech Stack
 
 - Python
 - Streamlit
 - LangChain
-- Groq (LLM)
-- Tavily Search API
+- Groq LLM
+- Tavily API
+- BeautifulSoup
+- Git & GitHub
 
-## Project Structure
+---
+
+## Project Workflow
 
 ```
-.
+Company Name
+      │
+      ▼
+Collect Data
+      │
+      ▼
+Process & Organize Information
+      │
+      ▼
+Generate Structured Report
+      │
+      ▼
+Save Report
+```
+
+---
+
+## Data Processing Workflow
+
+### Extract
+- Fetch company information from online sources
+- Retrieve latest company news
+
+### Transform
+- Clean and organize collected information
+- Structure the data for report generation
+
+### Load
+- Generate and save structured reports
+
+---
+
+## Folder Structure
+
+```
+company-research-agent/
+│
 ├── app.py
 ├── agent.py
-├── tools.py
 ├── prompts.py
-├── requirements.txt
+├── tools.py
 ├── outputs/
+├── requirements.txt
 └── README.md
 ```
 
+---
+
 ## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Jitin19120/company-research-agent.git
+```
+
+Move into the project directory
+
+```bash
+cd company-research-agent
+```
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
+```
+
+Run the application
+
+```bash
 streamlit run app.py
 ```
 
-## Live Demo
+---
 
-https://company-report-ai.streamlit.app/
+## Skills Demonstrated
+
+- Python Programming
+- API Integration
+- Data Collection
+- Data Processing
+- Data Validation
+- Information Organization
+- Report Automation
+- Modular Software Design
+- Git Version Control
+
+---
+
+## Future Improvements
+
+- Export reports to CSV
+- Database integration
+- Interactive dashboards
+- Improved data visualization
+- Enhanced data processing pipeline
+
+---
 
 ## Author
 
-Jitin Yadav
+**Jitin Yadav**
+
+GitHub:
+https://github.com/Jitin19120
